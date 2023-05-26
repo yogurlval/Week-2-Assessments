@@ -103,8 +103,8 @@ class Manager extends Employee{
         console.log(`${this.name} manages ${this.employees}!`)
     }
     addEmployee(emp){
-        let arr =[]
-         arr.push(emp) + this.employees
+        let arr =[this.employees]
+         arr.push(emp)
     }
 }
 // i first had it trying to push into this.employees, but then figured i needed to create an array. but i'm not sure how to include the employees in the array. idk man
