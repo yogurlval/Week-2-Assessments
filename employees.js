@@ -110,6 +110,8 @@ class Manager extends Employee{
 }
 // i first had it trying to push into this.employees, but then figured i needed to create an array. but i'm not sure how to include the employees in the array. idk man
 
+// nvm i figured it out hehe
+
 
 /*
     Create a new instance of your class.
