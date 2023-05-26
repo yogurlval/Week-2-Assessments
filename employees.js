@@ -94,17 +94,18 @@ console.log(empTwo)
     the employees array. 
 */
 
+
 class Manager extends Employee{
     constructor(name, shifts, employees){
         super(name, shifts)
-        this.employees=employees
+        this.employees=[employees]
     }
     getEmployees(){
         console.log(`${this.name} manages ${this.employees}!`)
     }
     addEmployee(emp){
-        this.employees = []
-         return `${this.employees}` + this.employees.push(emp)
+        
+         return this.employees.push(emp)
     }
 }
 // i first had it trying to push into this.employees, but then figured i needed to create an array. but i'm not sure how to include the employees in the array. idk man
@@ -139,7 +140,7 @@ manager.getEmployees()
     'Coach' or whatever name you'd like.
 */
 
-manager.addEmployee("Stinky")
+manager.addEmployee(" and Stinky")
 
 /*
     Call the `getEmployees` method on the
