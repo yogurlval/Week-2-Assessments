@@ -197,9 +197,19 @@ let filteredPrice = foodArr.filter((obj)=>{
 */
 
 function filterByProperty(property, number, type){
-let filteredArr = foodArr.filter(number > 10)
+  let filteredArr = foodArr.filter((food) =>{
+    if (type === "above"){
+        return food[property] > number
+    } else {
+        return food[property] < number
+    }
+  })
+   return filteredArr
 }
-//// This was too many words and I got lost/overhwelmed lol, moving on
+
+
+//// during assessment: This was too many words and I got lost/overhwelmed lol, moving on
+///// update 2 hours later: I did it!!!!!!! I think I actually did it!!!!!!!!!!!! there were tears shed over this problem but I think I finally got it hahaha
 
 /*
     Invoke the `filterByProperty` function passing
@@ -208,4 +218,5 @@ let filteredArr = foodArr.filter(number > 10)
     You'll have to console.log to see the filtered array
 */
 
-// console.log(filterByProperty("price", 13, "above"))
+
+console.log(filterByProperty("price", 13, "below"))
