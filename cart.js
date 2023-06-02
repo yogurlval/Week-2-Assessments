@@ -61,6 +61,11 @@ const calcFinalPrice = cart.reduce((acc, curr) =>{
 },0)
 console.log(calcFinalPrice)
 
+// const calcFinalPrice = (cartTotal, couponValue, tax) => {
+//     let taxTotal = cartTotal + (cartTotal * tax)
+//     return taxTotal - couponValue
+// }
+
 
 //////////////////PROBLEM 3////////////////////
 /*  

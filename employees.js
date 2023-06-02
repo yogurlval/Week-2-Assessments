@@ -63,7 +63,7 @@ empOne.getSchedule()
     dot or bracket notation.
 */
 
-let empTwo = {...empOne}
+let empTwo = {...empOne} /// let empTwo = {...empOne, name: "Nick"} /// how to write IN LINE
 
 empTwo.name = "Nick"
 

@@ -151,11 +151,11 @@ let foodArr = [
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
-let filteredPrice = foodArr.filter((obj)=>{
-    return obj.price
+let filteredFood = foodArr.filter((obj)=>{
+    return obj.tags.includes("bacon")
     })
     
-    // console.log(filteredPrice)
+    // console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -219,4 +219,4 @@ function filterByProperty(property, number, type){
 */
 
 
-console.log(filterByProperty("price", 13, "below"))
+// console.log(filterByProperty("price", 13, "below"))

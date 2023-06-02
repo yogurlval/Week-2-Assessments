@@ -86,15 +86,15 @@ const canWeDeliver = (zipcode) =>{
 
 const canWeDeliverTwo = (zipcode) =>{
     for (let i =0; i < deliveryAreaZipCodes.length; i++){
-        if (zipcode = deliveryAreaZipCodes[i]){
+        if (zipcode === deliveryAreaZipCodes[i]){
             return ("You're in our delivery zone!")
-            } else {
-                return ("Sorry, we can't deliver to that address")
-            }
+            } 
         }
+            return ("Sorry, we can't deliver to that address")
+        
     }
 
-    // console.log(canWeDeliverTwo(85206))
+    console.log(canWeDeliverTwo(84057))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -150,9 +150,10 @@ let newDeal = deals[0].title.replace('15% Off!', "10% Off!")
     to be displaying wrong on the live site.
 */
 
-let newMonth = deals[1].desc.replace("March", "April")
+let newMonth = deals[1].desc.replace("March", "April").trim()
 
 
-console.log(newMonth.trim())
+console.log(newMonth)
+// console.log(deals)
 
 /// Not sure exactly where I would put the .trim() but I put it in the console.log to show at least that I know what to use lol
